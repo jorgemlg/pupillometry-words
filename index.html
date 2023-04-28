@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="images/lab_logo.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
+    <script src="specialFunctions.js"></script>
+
+    <title>Rate word brigthness</title>
+  </head>
+  <body>
+    <div class="Wrapper">
+      <div id="instructions">
+        <h1>Darkness and brightness words</h1>
+        <br />
+        <p>Help us better understand how people experience certain words.</p>
+        <br />
+        <p>
+          Your task is simply to<b
+            >rate the degree to which words convey a sense of darkness or
+            brightness</b
+          >. For example:
+        </p>
+        <ul>
+          <li>
+            Most people may rate the word <em>black</em> as evoking a
+            <b>very dark</b> sense.
+          </li>
+          <li>
+            Most people may rate the word <em>white</em> as evoking a
+            <b>very bright</b> sense.
+          </li>
+          <li>
+            Many people may find the word <em>pebble</em> as quite
+            <b>neutral</b>.
+          </li>
+        </ul>
+        <br />
+        <p>
+          Every now and then the word will be that of an <em>animal</em> (e.g.
+          BEAR). When you see an animal word, press the ANIMAL button.
+        </p>
+        <br />
+        <p>Click NEXT to practice with a few words.</p>
+        <br />
+        <div id="startPractice">
+          <button onclick="startPractice()">NEXT</button>
+        </div>
+      </div>
+
+      <div id="practice">
+        <p>
+          Good! Now that you've practice a bit, let's rate several words for the
+          sense of brightness/darkness they convey. And don't miss the animals!
+        </p>
+        <div id="startExperiment">
+          <button onclick="startExperiment()">START</button>
+        </div>
+      </div>
+
+      <div id="experiment">
+        <div class="Progress" id="progressText">
+          <h1>Progress</h1>
+
+          <div class="Progress" id="progressOutline">
+            <div class="Progress" id="progressBar"></div>
+          </div>
+        </div>
+        <div id="wordDisplay">
+          <div>
+            <p id="currentWord"></p>
+          </div>
+        </div>
+        <div class="ButtonDiv" id="buttonOrder0">
+          <button onclick="nextWord(1)">VERY DARK</button>
+          <button onclick="nextWord(2)">DARK</button>
+          <button onclick="nextWord(3)">NEUTRAL</button>
+          <button onclick="nextWord(4)">BRIGHT</button>
+          <button onclick="nextWord(5)">VERY BRIGHT</button>
+        </div>
+        <div class="ButtonDiv" id="buttonOrder1">
+          <button onclick="nextWord(5)">VERY BRIGHT</button>
+          <button onclick="nextWord(4)">BRIGHT</button>
+          <button onclick="nextWord(3)">NEUTRAL</button>
+          <button onclick="nextWord(2)">DARK</button>
+          <button onclick="nextWord(1)">VERY DARK</button>
+        </div>
+        <div class="ButtonDiv" id="buttonAnimalDiv">
+          <button id="buttonAnimal" onclick="nextWord(0)">ANIMAL</button>
+        </div>
+      </div>
+
+      <div id="demographics"></div>
+
+      <div id="finalQuestionnaire"></div>
+
+      <div id="debrief">
+        <p>Instert Debrief Info from GitHub</p>
+
+        <p>
+          <b
+            ><em
+              >Make sure to click "Go back to Prolific" otherwise you won't get
+              paid!</em
+            ></b
+          >
+        </p>
+        <button class="ButtonDiv" id="submit" onclick="submit();">
+          Go back to Prolific
+        </button>
+      </div>
+
+      <div id="submitPage">
+        <p>
+          Thank you!<br /><br />Your browser should automatically redirect you
+          to Prolific's webpage where you will be given a completion code.<br /><br />Redirecting
+          to Prolific in <span id="finalCountDown"><b>5</b></span
+          ><br /><br />If you're not automatically redirected in a few seconds,
+          please copy and paste this address on your web browser:<b
+            ><br /><br /><span id="urlProlific"></span><br /><br
+          /></b>
+        </p>
+        <br />
+      </div>
+    </div>
+  </body>
+</html>

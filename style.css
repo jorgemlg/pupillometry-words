@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightgray;
+  font-size: 16pt;
+  font-weight: normal;
+  color: black;
+  margin-top: 30px;
+}
+
+button {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin: 30px 10px;
+  padding: 0.75em;
+  text-align: center;
+  font-weight: 300;
+  font-size: 16pt;
+  color: white;
+  border: 0px solid rgb(0, 128, 255);
+  border-radius: 20px;
+  background-color: rgb(0, 128, 255);
+}
+
+button:hover {
+  background-color: cornflowerblue;
+}
+
+button:active {
+  background-color: steelblue;
+}
+
+h1 {
+  margin-top: 10px;
+  font-size: 20pt;
+  text-align: center;
+}
+
+li {
+  margin: 10px;
+}
+
+.Wrapper {
+  background-color: lightgray;
+  width: 90%;
+  max-width: 775px;
+  margin: auto;
+  padding: 5px;
+}
+
+#startExperiment,
+#startPractice {
+  margin: auto;
+  text-align: center;
+}
+
+#practice,
+#experiment {
+  display: none;
+}
+
+.Progress {
+  display: none;
+  text-align: center;
+  height: 60px;
+  margin-bottom: 30px;
+}
+
+#progressOutline {
+  background: white;
+  border: 3px solid black;
+  width: 100px;
+  height: 20px;
+  margin: 10px auto;
+}
+
+#progressBar {
+  background: gray;
+  width: 0px;
+  height: 20px;
+}
+
+#currentWord {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 125px;
+  text-align: center;
+  font-size: 40pt;
+}
+
+.ButtonDiv {
+  display: none;
+  text-align: center;
+  margin: auto;
+}
+
+#buttonAnimal {
+  margin: 30px 10px;
+  padding: 0.75em;
+  border: 0px solid rgb(80, 80, 80);
+  border-radius: 20px;
+  background-color: rgb(80, 80, 80);
+}
+
+#buttonAnimal:hover {
+  background-color: rgb(100, 100, 100);
+}
+
+#buttonAnimal:active {
+  background-color: rgb(50, 50, 50);
+}
+
+#debrief,
+#submitPage {
+  display: none;
+}
+
+#finalCountDown {
+  font-size: 25pt;
+  font-weight: bold;
+}
